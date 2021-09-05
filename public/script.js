@@ -21,7 +21,7 @@ paypal.Buttons({
         }).then(({ id }) => {
             return id;
         }).catch(err => {
-            console.error(err.error);
+            console.error(err);
         });
     },
     onApprove: function(data, actions) {
